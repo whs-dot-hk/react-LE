@@ -20,7 +20,7 @@
 
 .App-intro {
   font-size: large;
-  width: 500px;
+  max-width: 500px;
   margin: 50px auto;
   text-align: left;
 }
@@ -33,7 +33,7 @@
 pre {
   padding: 20px;
   background-color: #e7deed;
-  border-radius: 10px;
+  overflow: auto;
 }
 
 code {

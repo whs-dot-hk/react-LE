@@ -69,7 +69,9 @@ class CommandSelect extends Component {
 
     // Get the timezone
     var tz = d.toTimeString();
-    tz = tz.substr(tz.indexOf("(")+1, 3); // e.g. HKT
+    // Position of (
+    const pos = tz.indexOf("(");
+    tz = tz.substr(pos+1,tz.length-1-(pos+1)); // e.g. HKT
 
     return (
       <select onChange={this.handleChange}>
